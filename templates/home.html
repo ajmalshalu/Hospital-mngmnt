@@ -1,0 +1,149 @@
+
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Home page {% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+<nav aria-label="breadcrumb position-static">
+  <ol class="breadcrumb bg-dark ">
+    <li class="breadcrumb-item  heads ">Home</li>
+  </ol>
+</nav>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <div class="text-light imgtext p-3" >
+        <h3>Updates</h3>
+        <h5 >Medical research involves research in a wide range of fields, such as biology, chemistry, pharmacology and toxicology with the goal of developing new medicines or medical procedures or improving the application of those already available. It can be viewed as encompassing preclinical research (for example, in cellular systems and animal models) and clinical research (for example, clinical trials).</h5>
+      </div>
+    </ol>
+    <div class="carousel-inner imges">
+      <div class="carousel-item active">
+        <img src="{% static '/image/R (1).jpg'%}"  class="d-block w-100"  style="height:90vh"alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/1df8a66f72e615d6842be7afd04ac87d.jpg' %}" style="height:90vh" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/R (2).jpg' %}" style="height:90vh" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/r1.jpg' %}" style="height:90vh" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/image/room.jpg'%}" style="height:90vh" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    
+  </div>
+  <div class="container">
+    <div class="row" style="margin-top:13vh">
+      <div class="imgs float-left p-5" style="width:50vh">
+        <img src="static\image\hospital.png" width="550vh" height="400vh">
+      </div>
+      <div class="float-right mt-5" style="width:60vh;margin-left:40vh">
+        <h3 class=""><b>Who We Are</b></h3>
+        <h5 class="content">Imbichibava Memorial Co-operative Hospital and Research Centre (IMCH) is a monumental co-operative organization named after the great leader of communist party of India (Marxist) Shri: E.K Imbichibava popularly known as Imbichibava. IMCH functions on the philosophy that the modern medicine practice should be an aid to life.</h5>
+        <a href="" class="btn">Explore Now &#8594;</a>
+      </div>
+    </div>
+  </div><br><br><br>
+
+  <div>
+    <h4 class="text-center mt-5" style="color:tomato;">Explore Our Specialities</h4><hr style="width:20%;color:tomato;weight:50%;margin-right:40%">
+    <h6 class="text-center">Imbhichi Bava Hospital has always been in the forefront to introduce the most advanced and sophisticated <br> treatment options in various specialities and subspecialities, most of them are at par with the international <br> standards.</h6>
+  </div>
+
+  <div >
+    <div class="col-3 text-center mx-3 my-3 ml-5  text-decoration-none" style="width: 15rem;height:19rem; display:inline-block;text-decoration: none;">
+      <a href=" {% url 'anaesthesiology' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/anaesthesiology-2.svg" height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Anaesthesiology</h4>
+        <p class="text-dark td-none "> The department of anaesthesiology is the backbone of surgery, and we at IBH have...</p>
+      </a>
+    </div>
+  
+    <div class="col-3 text-center mx-3 my-3 ml-5" style="width: 15rem;height:19rem; display:inline-block">
+      <a href="{% url 'arthroscopy' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/sports-injuries-1.svg" height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Arthroscopy & Sports Injuries</h4>
+        <p class="text-dark td-none"> The department provides medical care to athletes and non‐athletic people of…</p>
+      </a>
+    </div>
+  
+    <div class="col-3 text-center mx-3 my-3 ml-5 p-3" style="width: 15rem;height:19rem; display:inline-block">
+      <a href="{% url 'audiology' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/speech-therapy-1.svg"  height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Audiology & Speech Therapy</h4>
+        <p class="text-dark td-none">" The audiologists and speech therapy specialists at the department work closely…"</p>
+      </a>
+    </div>
+  
+    <div class="col-3 text-center mx-3 my-3 ml-5 " style="width: 15rem;height:19rem; display:inline-block">
+      <a href="{% url 'cardiac' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/cardiac.svg" height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Cardiac Anesthesia</h4>
+          <p class="text-dark td-none">Cardiac surgery is one of the most complex procedures that require…</p>
+      </a>
+    </div>
+  
+  </div>
+  <div>
+    <div class="col-3 text-center mx-3 my-3 ml-5 " style="width: 15rem;height:19rem; display:inline-block:margin-top:500px">
+      <a href="{% url 'cardio' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/cardiovascular-1.svg"  height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Cardio Thoracic & Vascular Surgery</h4>
+          <p class="text-dark td-none">" The department of Cardiothoracic and Vascular Surgery at BMH provides surgical…"</p>
+      </a>
+    </div>
+  
+    <div class="col-3 text-center mx-3 my-3 ml-5 " style="width: 15rem;height:19rem; display:inline-block">
+      <a href="{% url 'cardiology' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/cardiology.svg"  height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Cardiology</h4>
+          <p class="text-dark td-none"> The BMH Department of Cardiology offers the latest innovations in invasive…</p>
+      </a>
+    </div>
+  
+    <div class="col-3 text-center mx-3 my-3 ml-5 " style="width: 15rem;height:19rem; display:inline-block">
+      <a href="{% url 'childcare' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/11/child-care-1.png"   height="90px" alt>
+        </div>
+        <h4 class="text-dark td-none">Child Guidance</h4>
+          <p class="text-dark td-none">" We aim at improving the intellectual, academic, social and interpersonal skills…"</p>
+      </a>
+    </div>
+  
+    <div class="col-3 text-center mx-3 my-3 ml-5 " style="width: 15rem;height:19rem; display:inline-block;">
+      <a href="{% url 'criticalcare' %}" style="text-decoration:none">
+        <div class="">
+          <img src="https://babymhospital.org/wp-content/uploads/2020/09/critical-care.svg"   height="90px" alt>
+        </div>
+        <h4 class="text-dark ">Critical Care</h4>
+          <p class="text-dark td-none"> With a team of highly qualified and experienced doctors, nurses and…</p>
+      </a>
+    </div>
+  </div> 
+
+  
+
+  
+  
+{% endblock %}

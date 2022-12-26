@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Anesthesiology page {% endblock %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item  heads" aria-current="page">Anaesthesiology</li>
+    </ol>
+  </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="float-left p-5 " style="width:50vh"> 
+            <img  src="{% static '/image/anaesthesiology.jpg'%}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5"  style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Anesthesiology</h2><hr>
+            <h5 class="content" >The department of anaesthesiology is the backbone of surgery, and we at IBH have taken care to keep pace with the advancement and new developments in this field. Anaesthesiology is the backbone of surgery. With the advancement of specialties, surgical skill and techniques, anaesthesiology also improved and the Anaesthesia Department at BMH have kept pace with it. The world-class operation theatres at IBH are equipped with cutting-edge technology to administer anaesthesia. The department’s skilled and experienced team of Anaesthetists, with their multi-disciplinary approach, focuses on the safety and comfort of patients undergoing surgical, diagnostic, interventional and endoscopic procedures. The department provides pain management for patients with chronic and disabling pain disorders. The Operation Theatre Complex at BMH has 16 fully equipped world class OT Suites with stainless steel wall cladding in the interiors, anti-static flooring and laminar airflow air conditioning system with micro filters ensuring zero percentage infection.</h5>
+        
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

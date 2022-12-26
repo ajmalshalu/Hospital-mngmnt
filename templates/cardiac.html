@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Cardiac page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Cardiac Anesthesia</li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="float:left p-5"  style="width:50vh">
+            <img src="{% static '/image/Cardiac.jpg'%}" width="450vh" height="300vh"> 
+        </div>
+        <div class="float-right mt-5" style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Cardiac Anesthesia<h2><hr>
+            <h5 class="content">Cardiac surgery is one of the most complex procedures that require utmost care. We ensure quality anaesthetic care with specific attention to detail, focusing on patient safety and accurate result. Department of Cardiac Anaesthesia, a division of Anaesthesia Department of this hospital has been providing care for children and adults with various forms of congenital and acquired heart diseases as well as those with thoracic (lung and mediastinum) and vascular surgeries (major blood vessel diseases). The division provide a uniform dedicated team based care. The team care for patients in the operating room, Cardio Thoracic Intensive Care Unit, Cardiac Intensive Care Unit and Cardiac Catheterization Laboratory, as well as patients of other invasive and noninvasive diagnostics and therapeutic procedures.</h5>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

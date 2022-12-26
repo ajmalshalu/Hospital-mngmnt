@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Arthroscopy page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Arthroscopy</li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="float-left p-5" style="width:50vh">
+            <img src="{% static '/image/arthroscopy.jpg'%}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5 " style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Arthroscopy & Sports Injuries</h2><hr>
+            <h5 class="content">The department provides medical care to athletes and non‐athletic people of all ages. We understand the need for quick recovery and pain management in sports injuries and our sports medicine team works with surgeons to put our patient's health back on track. Using the latest minimally invasive surgical techniques and the latest imaging techniques, our specially trained doctors offer consultation, treatment and surgery for sports injuries without restricting the activity of the patient and reducing recovery time. The world‐class Arthroscopy theatre at BMH regularly conducts knee, elbow and shoulder arthroscopy, revision, and replacement surgeries. Through our fully equipped Sports Rehabilitation and Physiotherapy unit we provide a line‐up of services ranging from sports injury management to fitness testing and exercise prescription for health and fitness, and sports performance enhancement. We also offer sports medicine services to USHA School of Athletics, Sports Authority of India, Sports and Educational Promotional Trust (SEPT) and several other sports organisation and provide regular training and treatment to the athletes. The department provides fellowship opportunity in Arthroscopy and Sports Injuries in collaboration with Smith and Nephew.</h5>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

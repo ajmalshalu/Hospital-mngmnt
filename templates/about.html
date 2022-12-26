@@ -1,0 +1,41 @@
+
+{% extends 'base.html'%}
+
+{% block title %}About page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-dark">
+    <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+    <li class="breadcrumb-item heads" aria-current="page">About</li>
+  </ol>
+</nav>
+{% comment %} <h2 style="margin-left:13%"><u><strong> About IBH <strong><u><h2> {% endcomment %}
+ <div class="tds">
+<h3 style="margin-left:13%;margin-top:4%;color:tomato"><b>About IBH</b></h3><hr style="width:20%;color:tomato;weight:50%;margin-right:70%">
+<h6 style="margin-left:13%;margin-right:13%;margin-top:2%">The vision ‘affordable, accessible and quality healthcare for all’, a dream of visionary, Dr. Fahad was made a reality in 2022 with the commencement of Imbhichi Bava Hospital (IBH). The novel initiative then marked a revolution in the healthcare segment in Kerala, thus symbolizing an answer for the growing healthcare demands of the state. A tribute to late K C Varghese (known as ‘bava’), father of Dr. Fahad, the Chairman and Managing Director, the hospital has set a benchmark in offering unprecedented care.</h6>
+<h6 style="margin-left:13%;margin-right:13%;margin-top:2%">With only 52 beds when started, the hospital now boasts world‐class amenities, which includes:</h6>
+<h6 style="margin-left:13%;margin-right:13%;margin-top:2%">
+    - 600 beds.<br>
+    - Over 40 Medical and Surgical departments.<br>
+    - Exceptional paramedical support system.<br>
+    - 16 world-class operation theatres.<br>
+    - 11 fully equipped ultramodern ICUs.<br>
+    - 24‐hours accident and trauma care unit.</h6>
+<h6 style="margin-left:13%;margin-right:13%;margin-top:2%">Adhering to strict and ethical medical practices, the hospital team ‐ which expands to 300 doctors and over 2000 nursing, paramedical and administrative staff – relentlessly strive to keep up our ideology, ‘ more than care ‘.</h6>  
+
+<div class="container">
+    <div class="row tds">
+      <div class="col mt-5 shadow p-3 mb-5  rounded" style="background-color:bisque">
+        <h4 style="margin-left:3%;margin-top:4%">Vision & Mission</h4><hr style="width:30%;color:tomato;height:5%;margin-right:65%">
+        <h6 style="margin-top:3%;margin-left:9%;margin-right:9%;margin-bottom:3%;">Vision : Affordable, Accessible and Quality Services to All.<br><br>
+    
+            Mission : “IBH shall provide quality healthcare in a safe and patient centred environment by highly skilled professionals using current best medical practices and advanced technology. We offer patients outstanding value in an environment friendly atmosphere”.</h6>
+      </div>
+      <div class="col mt-5 ml-4 mt-2 shadow p-3 mb-5  rounded"  style="background-color:bisque;">
+        <h4 style="margin-left:3%;margin-top:4%">IBH - more than care<hr style="width:30%;color:tomato;height:5%;margin-right:65%"></h4>
+        <h6 style="margin-top:3%;margin-left:9%;margin-right:9%;margin-bottom:3%;">Being committed to care for three decades has meant a lot to us. It helped us to understand better on how to give you more than care, through deeper understanding of your needs. We have thus, combined the best of healthcare, commitment and personal attention to give you a unique healing experience.</h6>
+      </div>
+    </div>
+</div>
+{% endblock %}

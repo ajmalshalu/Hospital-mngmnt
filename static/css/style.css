@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+body{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+html {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a:hover{
+    background-color: white;
+    border-color: white;
+    border-radius: 10px;
+    color: black;
+}
+/* #dpt{
+    
+} */
+
+.cont{
+    background-color: rgb(243, 207, 207);
+    color: black;
+}
+
+
+.HELLO{
+    width: 60%;
+    background-color: rgb(194, 188, 188);
+    color:tomato;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col-3{
+    background:radial-gradient(#fff,#ffd6d6);
+    display:inline-block;
+    text-decoration:none;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: tranform 0.5s;
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    border-radius:10px;
+    
+}
+
+.col-3:hover{
+    transform: translateY(-10px);
+    text-decoration:none;
+}
+
+.col-3 img{
+    width: 11   0px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.col h4:hover{
+    color: #ff523b;
+}
+
+#name{
+    margin-left:100px;
+}
+
+.content{
+    font-family: 'Montserrat', sans-serif;
+    margin-top:30px;
+
+}
+
+.tds{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.texts{
+    margin-left:30vh;
+
+}
+
+.heads{
+    color:#ff523b;
+}
+
+/* .imgs{
+    margin-top:13vh
+} */
+
+.btn{
+    display: inline-block;
+    background: rgba(33, 173, 141, 0.8);
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/* .imgtext{
+    	font-family: 'Montserrat', sans-serif;
+    border:2px solid white;
+    border-radius:10px;
+    width:90vh;
+    margin-bottom:15vh;
+    margin-right:60vh;
+}
+
+.imgtext::after{
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 70%;
+	width: 56%;
+	background-color: black;
+	opacity: 0.4;
+	z-index: -1;
+    border-radius:10px;
+}
+
+
+
+
+
+ */
+
+
+
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: crimson;
+}

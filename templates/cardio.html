@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Cardio page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Cardio Thoracic & Vascular Surgery</li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="float:left p-5"  style="width:50vh">
+            <img src="{% static '/image/Cardio.jpg'%}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5" style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Cardio Thoracic & Vascular Surgery<h2><hr>
+            <h5 class="content">The department of Cardiothoracic and Vascular Surgery at IBH provides surgical solutions to conditions related to heart, lung, and blood vessels. Comprehensive Cardiothoracic & Vascular (CTVS) Surgery is offered at IBH Heart Centre that involves the treatment of diseases affecting organs inside the chest (heart, lungs & major blood vessels). The centre aims at giving excellent surgical care while minimizing the pain, cost and inconvenience for the patients thereby completely restoring their health and well‐being. A wide range of complex heart problems are managed with advanced surgical care, with the help of full‐fledged cardiac OT suites equipped with latest technologies. Giving importance to patient’s comfort, the operation theatres and other facilities are arranged in a patient‐friendly manner. The advanced CTVS ICU is well‐equipped to offer 24‐hour pre and post‐operative care for critically ill patients. The panel of doctors at the surgery department consists of well‐qualified experienced surgeons to assure perfect care during and after the surgical treatments. IABP (Intra‐Aortic Balloon Pump) and ECMO (Extracorporeal Membrane Oxygenation) are used to support the lives of critically ill patients with respiratory and/or heart failures. The procedure requires skilled professionals and the assistance of latest technologies, which IBH assures to the patients.</h5>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

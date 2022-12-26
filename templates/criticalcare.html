@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Critical page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Critical Care</li>
+    </ol>
+  </nav>
+
+<div class="container">
+    <div class="row">
+        <div class="float-left p-5 " style="width:50vh">
+            <img src="{% static '/image/critical-care.jpg'%}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5" style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Critical Care<h2><hr>
+            <h5 class="content">With a team of highly qualified and experienced doctors, nurses and support staff working together, we at BMH are dedicated to the management of critically ill patients. The Critical Care Centre at IBH provides round the clock swift and accurate treatment to patients with life‐threatening situations, including those acutely ill or critically injured. The closed multidisciplinary ICU at the department is the first‐of‐its‐kind in Kerala, manned by a team of intensivists & sophisticated critical care physicians. State‐of‐the‐art equipment and facilities are made available in the ICUs that make the department one of the best in the region. With a wide range of intensive and holistic integrated care, we provide continuous and specialised treatment to critically ill patients. We take an integrated approach while providing critical care to the patients making it possible for them to get the medical attention from experts of different medical departments. Focused and personalised medical attention is given to each patient from initial stages to recovery. The specialised Toxicology & Snake Bite unit at the department ensures immediate medical attention for victims of snake bite and poisoning. The nurses at the Critical Care Centre are well‐trained in BLS and ACLS and have relevant experience in the field. The expert team of ACLS/BLS trained Doctors, Nurses and Ancillary staff provides holistic treatment to patients, with an optimal, evidence‐based approach. The department is a recognised super specialty training centre in Critical Care Medicine.</h5>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

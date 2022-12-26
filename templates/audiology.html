@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Audiology page {% endblock %}
+
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Audiology</li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="float:left p-5" style="width:50vh">
+            <img src="{% static '/image/audiolgy.jpg' %}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5 " style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Audiology & Speech Therapy<h2><hr>
+            <h5 class="content" >The audiologists and speech therapy specialists at the department work closely to assess hearing and speech problems, diagnosing and recommending a plan to tackle them.Imbhichi Bava Hospital has highly-qualified and skilled speech-language therapists and audiologists who evaluate and treat patients suffering from language, speech and fluency problems. They can diagnose, test and treat people suffering from speech pathology problems. If there are any underlying medical problems to speech and pathology issues that would also be identified and corresponding treatment started along with speech and hearing therapy. Oral motor, cognitive-linguistic, swallowing, hearing, speech, and even language disorders might actually be the result of neurological events which would be identified and adequately treated. Speech therapists would conduct standard language tests coupled with cognitive-linguistic tests to provide accurate treatment to our patients. The department routinely conducts neonatal screening to detect hearing loss in new-born.</h5>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+

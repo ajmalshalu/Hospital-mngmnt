@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Cardiology page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Cardiology</li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="float-left p-5"  style="width:50vh">
+            <img src="{% static '/image/cardiology.jpg'%}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5" style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Cardiology<h2><hr>
+            <h5 class="content">The IBH Department of Cardiology offers the latest innovations in invasive and noninvasive cardiac care to patients of all ages. The department of Cardiology provides medical management for all kinds of diseases relating to the heart and circulatory system. Medical diagnosis and treatments are offered to health issues like heart failures, congenital heart diseases and various other disorders. Understanding the needs of heart patients, BMH has facilitated services of highly experienced cardiologists and advanced technology. Cutting‐edge facilities and services are provided to ensure quality care to the patients at affordable cost. Two Digital flat panel Cath lab with Gen 3 – Greenfield Technology, IVUS facility makes it easier to have best results making way for better diagnosis and treatment. The radionuclide cardiac imaging technology aims at better imaging with less radiation. The test is done to evaluate various cardiac issues. The electrophysiology lab at BMH cardiology department has facilities for diagnosis as well as treatment for irregular heart beat conditions.</h5>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

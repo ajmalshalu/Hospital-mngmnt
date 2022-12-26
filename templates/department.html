@@ -1,0 +1,24 @@
+
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title %}Department page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Department</li>
+    </ol>
+  </nav>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<h2 class="text-center" style="margin-bottom:2%;margin-top:2%"><u>Our department</u></h2>
+{% for i in dept %}
+<div class="mx-auto text-center  HELLO">
+
+    <h3 style=" color:tomato;">{{i.dpt_name}}</h3>
+    <p class="text-dark tds">{{i.dept_decription}}</p>
+</div>
+    {% endfor %}
+{% endblock %}

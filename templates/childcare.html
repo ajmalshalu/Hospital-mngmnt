@@ -1,0 +1,27 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block title %}Child Guidance page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Child Guidance</li>
+    </ol>
+  </nav>
+<div class="container">
+    <div class="row">
+        <div class="float-left p-5" style="width:50vh">
+            <img src="{% static '/image/child-guidance-.jpg'%}" width="450vh" height="300vh">
+        </div>
+        <div class="float-right mt-5" style="width:60vh;margin-left:30vh">
+            <h2 class="heads">Child Guidance<h2><hr>
+            <h5 class="content">We aim at improving the intellectual, academic, social and interpersonal skills in kids so as to enhance their quality of life and assist them in leading a fulfilling life in future.The Child Guidance Department at IBH focuses on improving the Intelligence, Memory, Concentration, Study skills, Communication skills, Social skills, Motor skills, Motivation and Life skills of children and adolescents, to guide them towards successful adulthood and excellence in life. The Child Guidance department at IBH is the only one of its kind in the region, which provides early intervention in preventing and managing the intellectual and behavioural problems of children. The department helps children with learning disabilities to improve scholastic skills and children with development delays to catch up with their peers.The department guidesadolescents to deal with the challenges of life through life skills training and also helps teenagers to excel in exams through scientific guidance.</h5>  
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,25 @@
+
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+
+{% block title %}Booking page {% endblock %}
+
+{% block content %}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-dark">
+      <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item heads" aria-current="page">Booking</li>
+    </ol>
+  </nav>
+<h1 class="text-center">Make an appointment</h1>
+<hr>
+<div class="container w-25 text-center p-3 my-5 bg-success">
+<form action="" method="POST">
+    {% csrf_token%}
+    {{form|crispy}}
+    <br>
+    <button class="btn btn-outline-warning btn-light mb-4" type="submit">Submit</button>
+</form>
+</div>
+{% endblock %}

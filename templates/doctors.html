@@ -1,0 +1,28 @@
+
+{% extends 'base.html'%}
+
+{% block title %}Doctors page {% endblock %}
+
+{% block content %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-dark">
+    <li class="breadcrumb-item"><a class="text-light" href="{% url 'home'%}">Home</a></li>
+    <li class="breadcrumb-item heads" aria-current="page">Doctors</li>
+  </ol>
+</nav>
+<h1 class="text-center" style="text-decoration:underline">Our Doctors</h1>
+<div class="container text-center" >
+    {% for i in doctors %}
+
+    <div class="card text-center mx-3 my-3 bg-warning" style="width: 20rem; display:inline-block">
+        <img src="{{i.doc_image.url}}" style="height:25vh" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr.{{i.doc_name}}</h5>
+          <p class="card-text">{{i.doc_spec}}</p>
+          <h6 class="card-text">{{i.dep_name}}</h6>
+        </div>
+      </div>
+      {% endfor %} 
+</div>    
+   
+{% endblock %}
